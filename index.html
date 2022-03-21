@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Нормализация -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
   <title>Музей зв'язку</title>
 </head>
 <body>
-  <main>
+  <header class="header">
+    <ul class = "header-control">
+      <li><button class = "main-button">Главная</button></li>
+      <li><button class = "retistration-button">Регистрация екскурсии</button></li>
+      <li><button class = "status-button">Статус екскурсии</button></li>
+    </ul>
+  </header>
+  <main class = "main">
+    <section class = "registration is-hidden">
       <form name = "mailForm" action="" class = "form">
         <div class = "input-container">
           <label for="name">Имя</label>
@@ -30,8 +40,13 @@
         </div>
         <button type = "button" class = "submit-button">Заказать</button>
       </form>
+    </section>
+    <section class = "herro is-not-hidden">
+      <h1 class = "hero-title">Главная </h1>
+    </section>
 
     </main>
      <script src = "./js/submitScript.js"></script>
+     <script src = "./js/buttons.js"></script>
   </body>
 </html>
