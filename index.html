@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,30 @@
   <title>Музей зв'язку</title>
 </head>
 <body>
-    <form name = "mailForm" action="" class = "form">
-      <div class = "input-container">
-        <label for="name">Имя</label>
-        <input type="text" name="Name" id = "name">
-      </div>
-      <div class="input-container">
-        <label for="sername">Фамилия</label>
-        <input type="text" name="Sername" id = "sername">
-      </div>
-      <div class="input-container">
-        <label for="telephone">Телефон</label>
-        <input type="tel" name="Telephone" id = "telephone">
-      </div>
-      <div class="input-container">
-        <label for="date">Дата</label>
-        <input type="date" name="Date" id = "date">
-      </div>
-      <div class="input-container" style="flex-direction: row;">
-        <label for="call">Звонить</label>
-        <input type="radio" name="callback" value="Звонить" id = "call">
-        <label for="notCall">Не звонить</label>
-        <input type="radio" name="callback" value="Не звонить" id = "notCall">
-      </div>
-      <button type = "button" class = "submit-button">Заказать</button>
-    </form>
-    <script src = "./js/submitScript.js"></script>
+  <main>
+      <form name = "mailForm" action="" class = "form">
+        <div class = "input-container">
+          <label for="name">Имя</label>
+          <input type="text" name="Name" id = "name">
+        </div>
+        <div class="input-container">
+          <label for="telephone">Телефон</label>
+          <input type="tel" name="Telephone" id = "telephone">
+        </div>
+        <div class="input-container">
+          <label for="date">Дата</label>
+          <input type="date" name="Date" id = "date">
+        </div>
+        <div class="input-container" style="flex-direction: row;">
+          <label for="call">Звонить</label>
+          <input type="radio" name="callback" value="Звонить" id = "call">
+          <label for="notCall">Не звонить</label>
+          <input type="radio" name="callback" value="Не звонить" id = "notCall">
+        </div>
+        <button type = "button" class = "submit-button">Заказать</button>
+      </form>
+
+    </main>
+     <script src = "./js/submitScript.js"></script>
   </body>
 </html>

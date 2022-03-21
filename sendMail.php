@@ -1,7 +1,34 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+if (isset($_POST)) {
+    
+    if(/*$_POST['Name'] == '' || $_POST['Sername'] == '' || $_POST['Telephone'] == '' || $_POST['Date'] == '' || $_POST['callback'] == ''*/false){
+        echo("Reqest faild");
+    }
+    else{
+        $mysql = mysqli_connect("sql310.epizy.com", "epiz_31259283", "CUF8DeDdMeE5Sd", "epiz_31259283_MuseumIvents");
+        if($mysql == false){
+            echo('Connect false'. mysqli_connect_error());
+        }
+        else{
+            mysqli_set_charset($mysql, "utf8");
+            $sql = "INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, '". $_POST['Name'] ."', '". $_POST['Date'] ."', '". $_POST['Telephone'] ."', '". $_POST['callback'] ."', 'Обработка');";
+            $result = mysqli_query($mysql, $sql);
+            if($result == false){
+                echo("Reqest false");
+            }
+            else{
+                echo("Reqset true");
+            }
+        }
+    }
+}
+
+
+/*use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, 'Максим', '2022-03-22', '+380993282760', 'не пене', 'Обработка');
 
 //Load Composer's autoloader
 require 'include/PHPMailer.php';
@@ -36,6 +63,5 @@ try {
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
+    ec*/
 ?>
