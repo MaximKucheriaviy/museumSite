@@ -6,22 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Нормализация -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+  <!-- Стили -->
+  <link rel="stylesheet" href="./styles.css">
   <title>Музей зв'язку</title>
 </head>
 <body>
   <header class="header">
     <ul class = "header-control">
-      <li><button class = "main-button">Главная</button></li>
-      <li><button class = "retistration-button">Регистрация екскурсии</button></li>
-      <li><button class = "status-button">Статус екскурсии</button></li>
+      <li><button class = "main-button">На головну</button></li>
+      <li><button class = "retistration-button">Реєстрація екскурсії</button></li>
+      <li><button class = "status-button">Статус екскурсії</button></li>
     </ul>
   </header>
   <main class = "main">
     <section class = "registration is-hidden">
       <form name = "mailForm" action="" class = "form">
         <div class = "input-container">
-          <label for="name">Имя</label>
+          <label for="name">Ім'я</label>
           <input type="text" name="Name" id = "name">
         </div>
         <div class="input-container">
@@ -33,16 +36,16 @@
           <input type="date" name="Date" id = "date">
         </div>
         <div class="input-container" style="flex-direction: row;">
-          <label for="call">Звонить</label>
-          <input type="radio" name="callback" value="Звонить" id = "call">
-          <label for="notCall">Не звонить</label>
-          <input type="radio" name="callback" value="Не звонить" id = "notCall">
+          <label for="call">Телефонувати</label>
+          <input type="radio" name="callback" value="Телефонувати" id = "call">
+          <label for="notCall">Не телефонувати</label>
+          <input type="radio" name="callback" value="Не телефонувати" id = "notCall">
         </div>
         <button type = "button" class = "submit-button">Заказать</button>
       </form>
     </section>
     <section class = "herro is-not-hidden">
-      <h1 class = "hero-title">Главная </h1>
+      <h1 class = "hero-title">Ласкаво просимо в музей зв'язку</h1>
     </section>
 
     </main>
