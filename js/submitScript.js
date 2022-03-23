@@ -9,19 +9,21 @@ function submit(){
         alert("Неверный формат телефона");
     }
     else{
-    xhr = new XMLHttpRequest();
-    xhr.open("POST", "../sendMail.php");
-    // xhr.setRequestHeader('Content-type', 'multipart/form-data')
-    xhr.send(data);
-    alert("Экскурсия принята")
-    document.forms.mailForm.Name.value = "";
-    document.forms.mailForm.Data.value = "";
-    document.forms.mailForm.Telephone.value = "";
-    document.forms.mailForm.callback.value = "";
-    // xhr.onload = function() {
-    //     let responseObj = xhr.response;
-    //     alert(responseObj.message); // Привет, мир!
-    // };
+        xhr = new XMLHttpRequest();
+        xhr.open("POST", "../sendMail.php");
+        xhr.responseType = 'text';
+        xhr.send(data);
+        xhr.onload = function() {
+            switch (xhr.response){
+                case "-3":
+                    alert("Вибачте на цю дату вже зареєстрована екскурсія, спробуйте іншу");
+                    break;
+                default:
+                    alert("Екскурсія зареєстрована з ID " + xhr.response + " Цей ID потрібно запам'ятати і використовувати для отримання інформації по єкскурсії");
+                    document.forms.mailForm.Name.value = "";
+                    document.forms.mailForm.Telephone.value = "";
+            }
+        }
     }
 }
 submitButton.onclick = function() {

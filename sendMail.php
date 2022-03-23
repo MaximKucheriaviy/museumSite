@@ -11,14 +11,26 @@ if (isset($_POST)) {
         }
         else{
             mysqli_set_charset($mysql, "utf8");
-            $sql = "INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, '". $_POST['Name'] ."', '". $_POST['Date'] ."', '". $_POST['Telephone'] ."', '". $_POST['callback'] ."', 'Обработка');";
+
+            $sql = "SELECT * FROM `Экскурсии` WHERE `Дата` = '". $_POST['Date'] ."'";
             $result = mysqli_query($mysql, $sql);
-            if($result == false){
-                echo("Reqest false");
+            $row = mysqli_fetch_array($result);
+            if($row['Дата'] == $_POST['Date']){
+                echo('-3');
             }
             else{
-                echo("Reqset true");
-            }
+                $sql = "INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, '". $_POST['Name'] ."', '". $_POST['Date'] ."', '". $_POST['Telephone'] ."', '". $_POST['callback'] ."', 'Обработка');";
+                $result = mysqli_query($mysql, $sql);
+                if($result == false){
+                    echo("Reqest false");
+                }
+                else{
+                    $sql = "SELECT * FROM `Экскурсии` WHERE `Дата` = '". $_POST['Date'] ."'";
+                    $result = mysqli_query($mysql, $sql);
+                    $row = mysqli_fetch_array($result);
+                    echo($row['ID']);
+                }
+            }            
         }
     }
 }
