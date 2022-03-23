@@ -24,23 +24,24 @@ ol{
 }
 .main{
     position: relative;
-
     padding-top: 30px;
 }
 
-.registration{
+
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.registration,
+.herro,
+.status{
     position: absolute;
-    left: 50%;
-    
-    transform: translateX(-50%);
+    width: 100%;
+    top: 30;
+    left: 0;
 }
 
-.herro{
-    position: absolute;
-    left: 50%;
-    
-    transform: translateX(-50%);
-}
+
 
 .hero-title{
     font-size: 40px;
@@ -73,4 +74,8 @@ ol{
     visibility: hidden;
     opacity: 0;
     pointer-events: unset;
-  }
+ }
+
+ .status-form{
+     display: flex;
+ }

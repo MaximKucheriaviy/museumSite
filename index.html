@@ -22,32 +22,47 @@
   </header>
   <main class = "main">
     <section class = "registration is-hidden">
-      <form name = "mailForm" action="" class = "form">
-        <div class = "input-container">
-          <label for="name">Ім'я</label>
-          <input type="text" name="Name" id = "name">
-        </div>
-        <div class="input-container">
-          <label for="telephone">Телефон</label>
-          <input type="tel" name="Telephone" id = "telephone">
-        </div>
-        <div class="input-container">
-          <label for="date">Дата</label>
-          <input type="date" name="Date" id = "date">
-        </div>
-        <div class="input-container" style="flex-direction: row;">
-          <label for="call">Телефонувати</label>
-          <input type="radio" name="callback" value="Телефонувати" id = "call">
-          <label for="notCall">Не телефонувати</label>
-          <input type="radio" name="callback" value="Не телефонувати" id = "notCall">
-        </div>
-        <button type = "button" class = "submit-button">Заказать</button>
-      </form>
+      <div class="container">
+        <form name = "mailForm" action="" class = "form">
+          <div class = "input-container">
+            <label for="name">Ім'я</label>
+            <input type="text" name="Name" id = "name">
+          </div>
+          <div class="input-container">
+            <label for="telephone">Телефон</label>
+            <input type="tel" name="Telephone" id = "telephone">
+          </div>
+          <div class="input-container">
+            <label for="date">Дата</label>
+            <input type="date" name="Date" id = "date">
+          </div>
+          <div class="input-container" style="flex-direction: row;">
+            <label for="call">Телефонувати</label>
+            <input type="radio" name="callback" value="Телефонувати" id = "call">
+            <label for="notCall">Не телефонувати</label>
+            <input type="radio" name="callback" value="Не телефонувати" id = "notCall">
+          </div>
+          <button type = "button" class = "submit-button">Заказать</button>
+        </form>
+      </div>
     </section>
-    <section class = "herro is-not-hidden">
-      <h1 class = "hero-title">Ласкаво просимо в музей зв'язку</h1>
+    <section class = "herro is-hidden">
+      <div class = container>
+        <h1 class = "hero-title">Ласкаво просимо в музей зв'язку</h1>
+      </div>
     </section>
-
+    <section class="status is-not-hidden">
+      <div class="container">
+        <p>Введіть ідентифікатор екскурсії для отримання статусу</p>
+        <form name = "status-form" class = "status-form">
+          <div class="input-container">
+            <label for="ID">ID</label>
+            <input type="text" name="ID" id = "ID">
+          </div>
+          <button type="button" class = "status-button">Пошук</button>
+        </form>
+      </div>
+    </section>
     </main>
      <script src = "./js/submitScript.js"></script>
      <script src = "./js/buttons.js"></script>
