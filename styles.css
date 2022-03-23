@@ -78,4 +78,16 @@ ol{
 
  .status-form{
      display: flex;
+     align-items: flex-end;
+     gap: 30px;
  }
+
+.find-container{
+    display: flex;
+    flex-direction: column;
+}
+.excursion-data{
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: 4px solid green;
+}
