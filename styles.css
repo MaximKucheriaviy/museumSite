@@ -91,3 +91,27 @@ ol{
     background-color: rgba(0, 0, 0, 0.5);
     outline: 4px solid green;
 }
+
+.Response-table{
+    border: 2px solid white;
+    border-collapse:collapse;
+}
+.Response-table th{
+    min-width: 200px;
+    border-bottom:  3px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Response-table td{
+    min-width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Response-table th:nth-child(2),
+.Response-table td:nth-child(2){
+    border-left:2px solid gray;
+    border-right: 2px solid gray;
+}
