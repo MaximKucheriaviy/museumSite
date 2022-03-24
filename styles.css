@@ -2,6 +2,12 @@ body{
     background-image: url(./images/main-back.jpg);
     color: aliceblue;
     font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
 
 ul,
@@ -87,31 +93,41 @@ ol{
     flex-direction: column;
 }
 .excursion-data{
+    margin-top: 10px;
     min-height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
-    outline: 4px solid green;
+    border: 4px solid green;
 }
 
 .Response-table{
-    border: 2px solid white;
+    border: 2px solid gray;
     border-collapse:collapse;
 }
 .Response-table th{
     min-width: 200px;
     border-bottom:  3px solid gray;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .Response-table td{
     min-width: 200px;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .Response-table th:nth-child(2),
 .Response-table td:nth-child(2){
     border-left:2px solid gray;
     border-right: 2px solid gray;
+}
+.color-box{
+    display: inline-block;
+    
+    padding: 5px;
+    border-radius: 4px;
+}
+.bc-yelow{
+    background-color: rgba(255, 255, 0, 0.5);
 }
