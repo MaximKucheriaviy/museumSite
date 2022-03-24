@@ -18,6 +18,7 @@ document.querySelector('.main-button').onclick = function(){
 }
 
 document.querySelector('.status-button').onclick = function(){
+    document.querySelector(".excursion-data").innerHTML = "";
     let currnet = document.querySelector('.is-not-hidden');
     let target = document.querySelector('.status');
     showHide(currnet, target);
