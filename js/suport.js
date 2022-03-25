@@ -31,3 +31,10 @@ function createResponseTable(name, data, value){
   </table>`
     return table;
 }
+function removeReqestLine(target){
+  target.remove();
+  if(!document.querySelector('.Response-table-rq').querySelector('td')){
+    document.querySelector('.Response-table-rq').classList.add('is-hidden');
+    document.querySelector('.excursion-data-rq-message').classList.remove('is-hidden');
+  }
+}

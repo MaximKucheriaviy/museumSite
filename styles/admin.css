@@ -1,8 +1,14 @@
 body{
     background-image: url(../images/main-back.jpg);
     color: azure;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
 .container{
     padding-left: 100px;
     padding-right: 100px;
@@ -49,4 +55,16 @@ body{
 .Response-table td:last-child{
     border-left: none;
     border-right: none;
+}
+
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: unset;
+    position: absolute;
+ }
+
+.excursion-data-rq-message{
+    padding-top: 10px;
+    padding-left: 10px;
 }
