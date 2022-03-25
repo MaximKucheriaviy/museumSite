@@ -3,6 +3,11 @@ body{
     color: azure;
 }
 
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .excursion-data{
     margin-top: 10px;
     min-height: 120px;

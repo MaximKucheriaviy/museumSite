@@ -17,64 +17,79 @@
     <main>
       
       <section class="herro">
-        <h1>
-          Адміністратор музею зв'язку
-       </h1>
+        <div class="container">
+          <h1>
+            Адміністратор музею зв'язку
+         </h1>
+        </div>
       </section>
       <section class="today-ecscusrios">
-        <h2>Екскурсії на сьогодні</h2>
-        <div class="excursion-data">
-          <!-- <p>На сьогодні екскурсій немає</p> -->
-          <table class = "Response-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Ім'я</th>
-                <th>Дата</th>
-                <th>Телефон</th>
-                <th>Дія</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10</td>
-                <td>`Максим Кучерявий`</td>
-                <td>`2022-03-22`</td>
-                <td>+380993282760</td>
-                <td><Button class = "calssel-button-gray">Відмініти</Button></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container">
+          <h2>Екскурсії на сьогодні</h2>
+          <div class="excursion-data">
+            <!-- <p>На сьогодні екскурсій немає</p> -->
+            <table class = "Response-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Ім'я</th>
+                  <th>Дата</th>
+                  <th>Телефон</th>
+                  <th>Дія</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>`Максим Кучерявий`</td>
+                  <td>`2022-03-22`</td>
+                  <td>+380993282760</td>
+                  <td><Button class = "calssel-button-gray">Відмініти</Button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
       <section class="reqests">
-        <h2>Запити на екскурсії</h2>
-        <div class="excursion-data">
-          <!-- <p>Запити відсутні</p> -->
-          <table class = "Response-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Ім'я</th>
-                <th>Дата</th>
-                <th>Телефон</th>
-                <th colspan="2">Дія</th>
-              </tr>
-            </thead>
-            <tbody class = "reqset-table-body">
-              <tr>
-                <td>10</td>
-                <td>`Максим Кучерявий`</td>
-                <td>`2022-03-22`</td>
-                <td>+380993282760</td>
-                <td><Button class = "calssel-button-gray">Прияняти</Button></td>
-                <td><Button class = "calssel-button-gray">Відмініти</Button></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container">
+          <h2>Запити на екскурсії</h2>
+          <div class="excursion-data">
+            <!-- <p>Запити відсутні</p> -->
+            <table class = "Response-table Response-table-rq">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Ім'я</th>
+                  <th>Дата</th>
+                  <th>Телефон</th>
+                  <th colspan="2">Дія</th>
+                </tr>
+              </thead>
+              <tbody class = "reqset-table-body">
+                <tr>
+                  <td class = "ID-container">10</td>
+                  <td>`Максим Кучерявий`</td>
+                  <td>`2022-03-22`</td>
+                  <td>+380993282760</td>
+                  <td><Button class = "acsept-button-green">Прияняти</Button></td>
+                  <td><Button class = "cansel-button-red">Відмініти</Button></td>
+                </tr>
+                <tr>
+                  <td class = "ID-container">12</td>
+                  <td>`Максим Кучерявий`</td>
+                  <td>`2022-03-22`</td>
+                  <td>+380993282760</td>
+                  <td><Button class = "acsept-button-green">Прияняти</Button></td>
+                  <td><Button class = "cansel-button-red">Відмініти</Button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>
+    <script src = "../js/adminControl.js"></script>
     <!-- <section class="secure">
         <form name = "admin-secure"></form>
     </section> -->
