@@ -19,7 +19,7 @@ if (isset($_POST)) {
                 echo('-3');
             }
             else{
-                $sql = "INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, '". $_POST['Name'] ."', '". $_POST['Date'] ."', '". $_POST['Telephone'] ."', '". $_POST['callback'] ."', 'Обработка');";
+                $sql = "INSERT INTO `Экскурсии` (`ID`, `Имя`, `Дата`, `Телефон`, `Звонок`, `Статус`) VALUES (NULL, '". $_POST['Name'] ."', '". $_POST['Date'] ."', '". $_POST['Telephone'] ."', '". $_POST['callback'] ."', 'Обробка');";
                 $result = mysqli_query($mysql, $sql);
                 if($result == false){
                     echo("Reqest false");
