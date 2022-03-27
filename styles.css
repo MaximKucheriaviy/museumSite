@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/main-back.jpg);
+    background-image: url(./images/main-back.jpg);
     color: aliceblue;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -117,18 +117,10 @@ ol{
     padding-bottom: 14px;
 }
 
-.Response-table th,
-.Response-table td{
+.Response-table th:nth-child(2),
+.Response-table td:nth-child(2){
     border-left:2px solid gray;
     border-right: 2px solid gray;
-}
-
-.Response-table th:first-child,
-.Response-table td:first-child,
-.Response-table th:last-child,
-.Response-table td:last-child{
-    border-left: none;
-    border-right: none;
 }
 .color-box{
     display: inline-block;
