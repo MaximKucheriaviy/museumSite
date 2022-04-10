@@ -1,0 +1,38 @@
+.registration{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.registration__form{
+    padding: 10px;
+
+    border: 3px solid $assentColor;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.registration__radio{
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.radio-container{
+    display: flex;
+    align-items: center;
+}
+
+.submit-button{
+    margin-top: 10px;
+    
+    padding: 5px 20px;
+    border-radius: 10px;
+}

@@ -1,28 +1,32 @@
 .header{
-    position: relative;
     min-height: 70px;
     border-bottom: 4px solid $assentColor;
 
     &__controllbutton{
         position: absolute;
         right: 5px;
-        top: 5px;
+        top: 10px;
         z-index: 2;
+        
         background-color: transparent;
         border: none;
     }
     &__control{
         position: absolute;
         z-index: 1;
+
         display: flex;
+        justify-content: center;
+        gap: 5px;
         padding: 10px;
         padding-top: 80px;
         padding-bottom: 30px;
-        background-color: #00000081;
+        
+        background-color: #000000d3;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         & li{
-            width: 33.3333%;
+            width: 30%;
         }
         & button{
             display: block;
@@ -31,14 +35,11 @@
             border-radius: 10px;
         }
         transition-property: transform;
-        transition-duration: 250ms;
+        transition-duration: 400ms;
+        transition-timing-function: ease;
     }
     & svg{
         fill: white;
-        & .icon__crost{
-            width: 20px;
-            height: 20px;
-        }
     }
 }
 
@@ -47,4 +48,5 @@
 }
 .header--container{
     padding: 0;
+    position: relative;
 }

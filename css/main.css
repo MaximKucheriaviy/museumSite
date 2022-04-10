@@ -38,7 +38,6 @@ ul {
 }
 
 .header {
-  position: relative;
   min-height: 70px;
   border-bottom: 4px solid #068511;
 }
@@ -46,7 +45,7 @@ ul {
 .header__controllbutton {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 10px;
   z-index: 2;
   background-color: transparent;
   border: none;
@@ -58,22 +57,28 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
   padding: 10px;
   padding-top: 80px;
   padding-bottom: 30px;
-  background-color: #00000081;
+  background-color: #000000d3;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .header__control li {
-  width: 33.3333%;
+  width: 30%;
 }
 
 .header__control button {
@@ -87,11 +92,6 @@ ul {
   fill: white;
 }
 
-.header svg .icon__crost {
-  width: 20px;
-  height: 20px;
-}
-
 .header--is-hidden {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -99,6 +99,7 @@ ul {
 
 .header--container {
   padding: 0;
+  position: relative;
 }
 
 .hero-title {
@@ -106,5 +107,51 @@ ul {
   color: white;
   text-align: center;
   font-size: 20px;
+}
+
+.registration {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.registration__form {
+  padding: 10px;
+  border: 3px solid #068511;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.registration__radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

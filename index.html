@@ -16,7 +16,7 @@
   <header class="header">
   <div class="container header--container">
     <button type="button" class="header__controllbutton">
-      <svg width = "30" height = "30">
+      <svg width = "20" height = "20">
         <use class="icon__menu" href = "./images/icons.svg#icon-menu"></use>
         <use class="icon__crost is-hidden" href = "./images/icons.svg#icon-cross"></use>
       </svg>
@@ -36,24 +36,24 @@
 </section>
     <section class = "registration is-hidden section">
     <div class="container">
-      <form name = "mailForm" action="" class = "form">
+      <form name = "mailForm" action="" class = "registration__form">
         <div class = "input-container">
           <label for="name">Ім'я</label>
-          <input type="text" name="Name" id = "name">
+          <input type="text" name="Name" id = "name" required>
         </div>
         <div class="input-container">
           <label for="telephone">Телефон</label>
-          <input type="tel" name="Telephone" id = "telephone">
+          <input type="tel" name="Telephone" id = "telephone" required>
         </div>
         <div class="input-container">
           <label for="date">Дата</label>
           <input type="date" name="Date" id = "date">
         </div>
-        <div class="input-container" style="flex-direction: row;">
+        <div class="input-container radio-container" style="flex-direction: row;">
           <label for="call">Телефонувати</label>
-          <input type="radio" name="callback" value="Телефонувати" id = "call">
+          <input class = "registration__radio" type="radio" name="callback" value="Телефонувати" id = "call">
           <label for="notCall">Не телефонувати</label>
-          <input type="radio" name="callback" value="Не телефонувати" id = "notCall">
+          <input class = "registration__radio" type="radio" name="callback" value="Не телефонувати" id = "notCall">
         </div>
         <button type = "button" class = "submit-button">Заказать</button>
       </form>
