@@ -1,3 +1,40 @@
 body{
-    color: $assentColor;
+    background-image: url("../images/main-back.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-size: cover;
+}
+
+.main{
+    position: relative;
+}
+
+.section{
+    position: absolute;
+    top:0;
+    left: 0;    
+    width: 100%;
+}
+
+.is-hidden{
+    display: none;
+}
+
+ol,
+ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+.container{
+    // outline: 3px solid tomato;
+    max-width: 414px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
 }

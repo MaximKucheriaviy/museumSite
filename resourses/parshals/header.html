@@ -1,12 +1,15 @@
-<header class = "header">
-    <img src="./images/logo.png" alt="logo" class="header__logo" width="41">
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="" class = "navigation__link">About us</a></li>
-            <li class="navigation__item"><a href="" class = "navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="" class = "navigation__link">Services</a></li>
-            <li class="navigation__item"><a href="" class = "navigation__link">Blogs</a></li>
-        </ul>
-    </nav>
-    <button type = "button" class = "header__button">Gift Finder</button>
+<header class="header">
+  <div class="container header--container">
+    <button type="button" class="header__controllbutton">
+      <svg width = "30" height = "30">
+        <use class="icon__menu" href = "./images/icons.svg#icon-menu"></use>
+        <use class="icon__crost is-hidden" href = "./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+      <ul class = "header__control header--is-hidden">
+        <li><button class = "main-button">На головну</button></li>
+        <li><button class = "retistration-button">Реєстрація екскурсії</button></li>
+        <li><button class = "status-button">Статус екскурсії</button></li>
+      </ul>
+  </div>
 </header>
