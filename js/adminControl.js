@@ -64,7 +64,7 @@ document.querySelector('.Response-table-rq').onclick = function(event){
     }
     else if(target.classList.contains("acsept-button-green")){
         let ID = target.parentElement.parentElement.querySelector('.ID-container').textContent
-        removeReqestLine(target.parentElement.parentElement);
+        let line = target.parentElement.parentElement
         // console.log("submit button pressed " + ID);
         let reqest = new FormData();
         reqest.append('ID', ID);
